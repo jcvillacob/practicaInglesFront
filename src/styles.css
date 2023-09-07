@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --px-theme: #1E88E5;
+    --px-theme-2: #1976D2;
+    --px-white: #f4f6f8;
+    --px-white-rgb: 244,246,248;
+    --px-text: #2C3E50;
+    --px-heading: #1A252C;
+    --px-bg: #ECEFF1;
+    --px-dark: #B0BEC5;
+    font-family: 'Open Sans', sans-serif;
+  }
