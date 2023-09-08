@@ -1,0 +1,23 @@
+.container {
+    width: calc(100% - 250px);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    transition: all 0.5s ease;
+    background: var(--px-bg);
+    background: linear-gradient(29deg, var(--px-bg) 0%, var(--px-dark) 100%);
+}
+
+.-menu-activated {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 100%;
+        left: 0;
+    }
+    
+}

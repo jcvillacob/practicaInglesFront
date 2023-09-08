@@ -1,0 +1,51 @@
+<div class="side-container" [ngClass]="{'-menu-activated' : !menu_active}">
+
+    <!-- New chat -->
+    <div class="side-container__new">
+        <div class="new__button">
+            <button class="button__btn">+ New Chat</button>
+        </div>
+        <div class="new__toggle" (click)="toggleMenu()">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </div>
+
+    <!-- Recents -->
+    <div class="side-container__recents">
+        <div class="recents__title">
+            <span class="title__span">Recents</span>
+        </div>
+
+        <!-- Chats -->
+        <div class="recents__chats">
+            <!-- Chat -->
+            <div class="chats__chat" *ngFor="let conv of conversations">
+                <div class="chat__info">
+                    <div class="info__icon">
+                        <i class="fa-regular fa-comments"></i>
+                    </div>
+                    <div class="info__title">
+                        <h4 class="title__h4">{{ conv.name }}</h4>
+                    </div>
+                </div>
+                <div class="chat__config">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Profile -->
+    <div class="side-container__profile">
+        <div class="profile__name">
+            <h4 class="name__h4"> Juan Camilo Villacob Zarante</h4>
+        </div>
+
+        <div class="profile__config">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </div>
+
+</div>

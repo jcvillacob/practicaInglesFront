@@ -1,0 +1,12 @@
+<div class="input-container">
+    <div class="input-container__input">
+        <input type="text" placeholder="Send a message" [(ngModel)]="text">
+        <i class="fa-solid fa-microphone -micro" *ngIf="!isRecording && !text" (click)="startRecording()"></i>
+        <i class="fa-solid fa-stop -micro" *ngIf="isRecording && !text" (click)="stopRecording()"></i>
+        <div class="input__audio" (click)="playAudio()" *ngIf="audioUrl">Audio.wav</div>
+    </div>
+
+    <div class="input-container__enviar" (click)="sendMessage()">
+        <i class="fa-solid fa-paper-plane"></i>
+    </div>
+</div>
