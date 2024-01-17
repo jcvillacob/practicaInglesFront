@@ -21,5 +21,4 @@ export class ConversationsService {
     return this.http.get<any[]>(this.url, { headers: headers });
   }
 
-
 }
